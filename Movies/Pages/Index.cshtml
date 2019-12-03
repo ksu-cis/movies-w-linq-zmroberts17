@@ -91,6 +91,15 @@
                 <input type="number" min="0" max="10" step="0.1" name="maxIMDB" value="@Model.maxIMDB"/>
             </label>
 
+            <h4>Sort by</h4>
+            <select name="sort">
+                <option value="title" default selected="@(Model.sort == "title")">Title</option>
+                <option value="director" selected="@(Model.sort == "director")">Director</option>
+                <option value="year" selected="@(Model.sort == "year")">Year</option>
+                <option value="imdb" selected="@(Model.sort == "imdb")">IMDB Rating</option>
+                <option value="rt" selected="@(Model.sort == "rt")">Rotten Tomatoes</option>
+            </select>
+
         </form>
     </div>
 
